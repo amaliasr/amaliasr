@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="170" height="40" viewBox="0 0 170 40" role="img" aria-label="31 loves">
+  <defs><style>
+    .t { font-family: 'Fredoka', 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', 'Segoe UI', sans-serif; }
+    @keyframes beat { 0%,100% { transform:scale(1); } 20% { transform:scale(1.25); } 40% { transform:scale(1); } }
+    .h { transform-box:fill-box; transform-origin:center; animation:beat 1.6s ease-in-out infinite; }
+  </style></defs>
+  <rect x="1" y="1" width="168" height="38" rx="19" fill="#fff0f7" stroke="#ff9ec7" stroke-width="2"/>
+  <g transform="translate(26 22) scale(.55)"><path class="h" d="M0 10 C-14 0 -22 -7 -22 -15 C-22 -20.5 -17.5 -24 -12.5 -24 C-9 -24 -6 -22 0 -17 C6 -22 9 -24 12.5 -24 C17.5 -24 22 -20.5 22 -15 C22 -7 14 0 0 10 Z" fill="#ff7ab6"/></g>
+  <text x="46" y="27" class="t" font-size="17" font-weight="700" fill="#ff6fae">31 loves</text>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="240" viewBox="0 0 1200 240" role="img" aria-label="How I work: Discover, Define, Build, Measure, Iterate">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eaf6ff"/><stop offset="1" stop-color="#fdf0f7"/></linearGradient>
+    <linearGradient id="ln" gradientUnits="userSpaceOnUse" x1="120" y1="0" x2="1080" y2="0"><stop offset="0" stop-color="#ff9ec7"/><stop offset=".5" stop-color="#ffd76e"/><stop offset="1" stop-color="#7cc4ff"/></linearGradient>
+    <style>
+      .t { font-family: 'Fredoka', 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', 'Segoe UI', sans-serif; }
+      @keyframes pop { 0% { opacity:0; transform:scale(.5); } 70% { transform:scale(1.1); } 100% { opacity:1; transform:scale(1); } }
+      @keyframes draw { to { stroke-dashoffset:0; } }
+      .n { opacity:0; transform-box:fill-box; transform-origin:center; animation:pop .6s ease-out forwards; }
+      .p { stroke-dasharray:960; stroke-dashoffset:960; animation:draw 2.4s ease-in-out .3s forwards; }
+    </style>
+  </defs>
+  <rect width="1200" height="240" rx="28" fill="url(#bg)"/>
+  <text x="56" y="46" class="t" font-size="20" font-weight="700" fill="#ff8fbf">✿ how I work</text>
+  <path class="p" d="M120 128 H1080" stroke="url(#ln)" stroke-width="6" fill="none" stroke-linecap="round" stroke-dasharray="960"/>
+  <path d="M0 10 C-14 0 -22 -7 -22 -15 C-22 -20.5 -17.5 -24 -12.5 -24 C-9 -24 -6 -22 0 -17 C6 -22 9 -24 12.5 -24 C17.5 -24 22 -20.5 22 -15 C22 -7 14 0 0 10 Z" fill="#ff8fbf" transform="scale(.45)">
+    <animateMotion path="M120 128 H1080" dur="5s" begin="2.7s" repeatCount="indefinite"/>
+  </path>
+  <g class="n" style="animation-delay:0.30s">
+    <circle cx="120" cy="128" r="36" fill="#fff" stroke="#ff9ec7" stroke-width="4"/>
+    <text x="120" y="139" text-anchor="middle" font-size="30">🔍</text>
+    <text x="120" y="192" text-anchor="middle" class="t" font-size="22" font-weight="700" fill="#3b5b8c">Discover</text>
+    <text x="120" y="216" text-anchor="middle" class="t" font-size="16" font-weight="500" fill="#6f8fbf">talk to users</text>
+  </g>
+  <g class="n" style="animation-delay:0.75s">
+    <circle cx="360" cy="128" r="36" fill="#fff" stroke="#ffb38a" stroke-width="4"/>
+    <text x="360" y="139" text-anchor="middle" font-size="30">🎯</text>
+    <text x="360" y="192" text-anchor="middle" class="t" font-size="22" font-weight="700" fill="#3b5b8c">Define</text>
+    <text x="360" y="216" text-anchor="middle" class="t" font-size="16" font-weight="500" fill="#6f8fbf">frame the problem</text>
+  </g>
+  <g class="n" style="animation-delay:1.20s">
+    <circle cx="600" cy="128" r="36" fill="#fff" stroke="#ffd76e" stroke-width="4"/>
+    <text x="600" y="139" text-anchor="middle" font-size="30">🛠️</text>
+    <text x="600" y="192" text-anchor="middle" class="t" font-size="22" font-weight="700" fill="#3b5b8c">Build</text>
+    <text x="600" y="216" text-anchor="middle" class="t" font-size="16" font-weight="500" fill="#6f8fbf">ship with the team</text>
+  </g>
+  <g class="n" style="animation-delay:1.65s">
+    <circle cx="840" cy="128" r="36" fill="#fff" stroke="#8fd8b8" stroke-width="4"/>
+    <text x="840" y="139" text-anchor="middle" font-size="30">📊</text>
+    <text x="840" y="192" text-anchor="middle" class="t" font-size="22" font-weight="700" fill="#3b5b8c">Measure</text>
+    <text x="840" y="216" text-anchor="middle" class="t" font-size="16" font-weight="500" fill="#6f8fbf">let data speak</text>
+  </g>
+  <g class="n" style="animation-delay:2.10s">
+    <circle cx="1080" cy="128" r="36" fill="#fff" stroke="#7cc4ff" stroke-width="4"/>
+    <text x="1080" y="139" text-anchor="middle" font-size="30">🔁</text>
+    <text x="1080" y="192" text-anchor="middle" class="t" font-size="22" font-weight="700" fill="#3b5b8c">Iterate</text>
+    <text x="1080" y="216" text-anchor="middle" class="t" font-size="16" font-weight="500" fill="#6f8fbf">better every loop</text>
+  </g>
+</svg>

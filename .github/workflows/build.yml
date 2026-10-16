@@ -1,0 +1,54 @@
+name: Build cute profile ♡
+
+on:
+  push:
+    branches: [main]
+    paths: ["scripts/**", ".github/workflows/**"]
+  watch:            # someone clicks ⭐ Star -> love counter +1
+    types: [started]
+  schedule:
+    - cron: "17 */6 * * *"   # also catches un-stars
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-profile
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Get the cute font (Fredoka, SIL OFL)
+        run: |
+          pip install -q fonttools
+          mkdir -p assets/fonts
+          curl -fsSL -o /tmp/Fredoka.ttf "https://raw.githubusercontent.com/google/fonts/main/ofl/fredoka/Fredoka%5Bwdth,wght%5D.ttf"
+          for w in 500 700; do
+            fonttools varLib.instancer /tmp/Fredoka.ttf wght=$w wdth=100 -o /tmp/fredoka-$w-full.ttf
+            pyftsubset /tmp/fredoka-$w-full.ttf \
+              --unicodes="U+0020-007E,U+00B7,U+2019,U+2661,U+273F" \
+              --layout-features='*' --output-file=assets/fonts/fredoka-$w.ttf
+          done
+
+      - name: Build SVGs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/build.py
+
+      - name: Commit
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/*.svg
+          git diff --cached --quiet && echo "no changes" && exit 0
+          git commit -m "♡ refresh profile art & love counter"
+          git push
