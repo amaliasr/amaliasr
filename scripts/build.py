@@ -163,7 +163,7 @@ def hero(fonts: str) -> str:
     <g class="a1"><text x="80" y="120" class="t" font-size="24" font-weight="500" fill="{SOFT}" letter-spacing="2">Halo, dunia!</text>
       <text class="hand" x="252" y="122" font-size="28">👋</text></g>
     <text class="a2 t" x="76" y="212" font-size="92" font-weight="700" fill="url(#name)">I'm Amalia</text>
-    <text class="a3 t" x="80" y="264" font-size="30" font-weight="500" fill="{NAVY}">Product Manager · Builder · Dreamer</text>
+    <text class="a3 t" x="80" y="264" font-size="30" font-weight="500" fill="{NAVY}">Product Manager</text>
     <g class="a4">
       <rect x="80" y="296" width="520" height="52" rx="26" fill="#fff" fill-opacity=".8" stroke="{BLUE}" stroke-opacity=".5" stroke-width="2"/>
       <text x="108" y="330" class="t" font-size="21" font-weight="500" fill="{NAVY}">turning ideas into products people love ♡<tspan class="cur" fill="{PINK}"> |</tspan></text>
