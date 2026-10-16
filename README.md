@@ -7,7 +7,7 @@
 </a>
 
 <p>
-  <a href="https://github.com/amaliasr/HelloAmalia"><img src="./assets/love-badge.svg" alt="Loves" height="34"/></a>
+  <a href="https://github.com/amaliasr/amaliasr"><img src="./assets/love-badge.svg" alt="Loves" height="34"/></a>
   &nbsp;
   <img src="https://komarev.com/ghpvc/?username=amaliasr&label=visitors&color=7cc4ff&style=for-the-badge" alt="Profile views" height="30"/>
 </p>
@@ -73,7 +73,7 @@ const amalia = {
 
 <div align="center">
 
-<a href="https://github.com/amaliasr/HelloAmalia">
+<a href="https://github.com/amaliasr/amaliasr">
   <img src="./assets/love.svg" alt="Send some love" width="420"/>
 </a>
 

@@ -18,7 +18,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 ASSETS = ROOT / "assets"
 FONTS = ASSETS / "fonts"
 BASE_LOVES = 31
-REPO = os.environ.get("GITHUB_REPOSITORY", "amaliasr/HelloAmalia")
+REPO = os.environ.get("GITHUB_REPOSITORY", "amaliasr/amaliasr")
 
 FAMILY = "'Fredoka', 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', 'Segoe UI', sans-serif"
 
